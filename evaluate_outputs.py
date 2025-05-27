@@ -11,7 +11,7 @@ hf_access_token = YOUR_HUGGINGFACE_TOKEN
 login(token = hf_access_token)
 ## !!! find ways to parse model 
 
-questions = [
+evaluation_prompt = [
     "Does the interviewer use language that suggests they are not part of the interviewee's culture? Answer only in yes or no."
 ]
 
@@ -60,7 +60,7 @@ def generate_output(pipe):
         return outputs[0]["generated_text"][-1]["content"]
     return generate
 
-def evaluate_csv(args, file_path, output_path, output_file_name, questions, generator):
+def evaluate_csv(args, file_path, output_path, output_file_name, evaluation_prompt, generator):
     df = pd.read_csv(file_path)
 
     # # Filter entries in full generated scripts for mitigation evaluation
@@ -148,8 +148,6 @@ def main():
         generator = generate_chatgpt_original
     elif args.model == "o4-mini":
         generator = lambda utt: generate_chatgpt_original(utt, model="o4-mini")
-    elif args.model == "deepseek":
-        generator = generate_deepseek
     else:
         pipe = load_model(args.model)
         generator = generate_output(pipe)
