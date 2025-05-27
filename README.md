@@ -5,14 +5,14 @@ This repository contains the code for the paper *Which Cultural Lens Do Models A
 ## Generating Scripts 
 We provide the code for generating the **CultureLens** dataset. ```constants.py``` includes prompt templates and descriptors specifying countries and cultures, culture-indicative names, occupations, gender, and age. 
 
-To generate dataset, add in your OpenAI account configuration in ```generation_util.py``` and run:
+To generate dataset, add in your OpenAI account configuration in ```generation_util.py``` and your HuggingFace token in ```generate_docs.py``` and run:
 ```
 sh ./scripts/run_generate_docs.sh
 ```
 Alternatively, the folder ```generated_scripts``` includes the complete dataset that you can directly use for evaluation. 
 
 ## Evaluating Scripts 
-To evaluate cultural positioning on the generated interview scripts, run 
+To evaluate cultural positioning on the generated interview scripts, add in your HuggingFace token in ```evaluate_outputs.py``` and run:
 ```
 sh ./scripts/run_evaluate_outputs.sh
 ``` 

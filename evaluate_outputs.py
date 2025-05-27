@@ -9,7 +9,6 @@ from generation_util import *
 from huggingface_hub import login
 hf_access_token = YOUR_HUGGINGFACE_TOKEN
 login(token = hf_access_token)
-## !!! find ways to parse model 
 
 evaluation_prompt = [
     "Does the interviewer use language that suggests they are not part of the interviewee's culture? Answer only in yes or no."
