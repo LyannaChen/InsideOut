@@ -1,6 +1,7 @@
 # Which Cultural Lens Do Models Adopt? Unmasking Cultural Positioning Bias in Large Language Model-Generated Interview Scripts
 
-This repository contains the code for the paper *Which Cultural Lens Do Models Adopt? Unmasking Cultural Positioning Bias in Large Language Model-Generated Interview Scripts*. It provides tools to evaluate cultural positioning bias in LLMs through interview script generation and to mitigate these biases using Fairness Intervention Pillars (FIP).
+Official Code Repository of ACL 2026 Main Paper, 'InsideOut: Measuring and Metigating Insider-Outsider Bias in Interview Script Generation
+'.
 
 ## Generating Scripts 
 We provide the code for generating the **CultureLens** dataset. ```constants.py``` includes prompt templates and descriptors specifying countries and cultures, culture-indicative names, occupations, gender, and age. 
