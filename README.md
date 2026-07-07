@@ -1,6 +1,6 @@
-# InsideOut: Measuring and Metigating Insider-Outsider Bias in Interview Script Generation
+# InsideOut: Measuring and Mitigating Insider-Outsider Bias in Interview Script Generation
 
-Official Code Repository of ACL 2026 Main Paper: 'InsideOut: Measuring and Metigating Insider-Outsider Bias in Interview Script Generation'.
+Official Code Repository of ACL 2026 Main Paper: 'InsideOut: Measuring and Mitigating Insider-Outsider Bias in Interview Script Generation'.
 
 ## CultureLens Dataset
 We provide the descriptors for constructing the **CultureLens** dataset. ```constants.py``` includes prompt templates and descriptors specifying countries and cultures, culture-indicative names, occupations, gender, and age. 
